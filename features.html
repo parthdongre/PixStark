@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Features — PixStark</title>
+  <meta name="description" content="Explore the features that make PixStark the best choice for your SaaS website." />
+
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Urbanist', sans-serif; }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in { animation: fadeIn 1s ease forwards; }
+
+    @keyframes slideIn {
+        from { opacity: 0; transform: translateX(-30px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+    .slide-in { animation: slideIn 1s ease forwards; }
+
+    /* Hover effects */
+    .hover-darken:hover { filter: brightness(0.8); transition: filter 0.3s ease; }
+  </style>
+</head>
+<body class="bg-black text-white antialiased">
+  <header class="max-w-7xl mx-auto p-6 flex items-center justify-between fade-in">
+    <div class="flex items-center gap-3 hover-darken cursor-pointer">
+      <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-pink-500 to-blue-500 text-white flex items-center justify-center font-bold">PS</div>
+      <div>
+        <div class="text-lg font-bold tracking-wide">PixStark</div>
+        <div class="text-xs text-slate-400">SaaS websites that actually sell</div>
+      </div>
+    </div>
+    <nav class="hidden md:flex gap-6 text-sm text-slate-300">
+        <a href="index.html" class="hover:text-pink-500 transition hover-darken">Home</a>
+        <a href="features.html" class="text-pink-500 transition hover-darken">Features</a>
+        <a href="pricing.html" class="hover:text-pink-500 transition hover-darken">Pricing</a>
+        <a href="contact.html" class="hover:text-pink-500 transition hover-darken">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+        <a href="contact.html" class="px-4 py-2 rounded-lg bg-gradient-to-r from-pink-600 to-blue-600 text-white text-sm shadow-md hover:opacity-90 hover-darken">Get a quote</a>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-6">
+    <!-- Features -->
+    <section id="features" class="py-20 text-center fade-in">
+      <h2 class="text-4xl font-bold mb-4">Why Choose <span class="text-pink-500">PixStark</span>?</h2>
+      <p class="text-slate-400 mb-12">Designs that dazzle. Code that converts.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="p-8 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-pink-600 transition hover-darken slide-in" style="animation-delay: 0.2s;">
+          <h3 class="font-semibold text-pink-500 text-lg mb-2">Premium Aesthetics</h3>
+          <p class="text-slate-400">We craft pixel-perfect designs that tell your brand’s story beautifully and boldly.</p>
+        </div>
+        <div class="p-8 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-blue-600 transition hover-darken slide-in" style="animation-delay: 0.4s;">
+          <h3 class="font-semibold text-blue-500 text-lg mb-2">Blazing Performance</h3>
+          <p class="text-slate-400">All websites are optimized for lightning-fast speed, SEO, and accessibility.</p>
+        </div>
+        <div class="p-8 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-white transition hover-darken slide-in" style="animation-delay: 0.6s;">
+          <h3 class="font-semibold text-white text-lg mb-2">Launch Support</h3>
+          <p class="text-slate-400">From design to deployment, we’re with you every step of the way.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-zinc-950 text-slate-400 text-center py-6 mt-10 border-t border-zinc-800 fade-in">
+    <p class="text-sm">© 2025 PixStark. Built with ❤️ and Tailwind CSS.</p>
+  </footer>
+</body>
+</html>
