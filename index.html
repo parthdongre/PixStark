@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PixStark — Beautiful SaaS Websites</title>
+  <meta name="description" content="PixStark builds fast, beautiful SaaS websites that convert visitors into customers. Templates, custom builds, and launch support." />
+
+  <!-- Tailwind (CDN for quick prototype) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .floaty { animation: floaty 6s ease-in-out infinite; }
+    @keyframes floaty {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+    .glass { background: rgba(255,255,255,0.6); backdrop-filter: blur(6px); }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-pink-100 via-white to-blue-50 text-slate-900 antialiased">
+  <header class="max-w-7xl mx-auto p-6 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-pink-500 to-blue-500 text-white flex items-center justify-center font-bold">PS</div>
+      <div>
+        <div class="text-lg font-semibold text-black">PixStark</div>
+        <div class="text-xs text-slate-500">SaaS websites that actually sell</div>
+      </div>
+    </div>
+    <nav class="hidden md:flex gap-6 text-sm text-slate-700">
+      <a href="#features" class="hover:text-pink-600">Features</a>
+      <a href="#pricing" class="hover:text-pink-600">Pricing</a>
+      <a href="#cases" class="hover:text-pink-600">Case Studies</a>
+      <a href="#contact" class="hover:text-pink-600">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="#contact" class="px-4 py-2 rounded-lg bg-gradient-to-r from-pink-600 to-blue-600 text-white text-sm shadow-md">Get a quote</a>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-6">
+    <!-- Hero -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-12">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-black leading-tight">Build your dream <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-blue-600">SaaS website</span> with PixStark</h1>
+        <p class="mt-4 text-lg text-slate-600 max-w-md">Launch stunning, high-converting websites designed to make your startup look like a million-dollar brand. Fast. Scalable. Memorable.</p>
+        <div class="mt-6 flex gap-4">
+          <a href="#pricing" class="px-6 py-3 rounded-lg bg-gradient-to-r from-pink-600 to-blue-600 text-white font-semibold shadow-md hover:opacity-90">View Plans</a>
+          <a href="#contact" class="px-6 py-3 rounded-lg border border-pink-500 text-pink-600 font-semibold hover:bg-pink-50">Talk to Us</a>
+        </div>
+      </div>
+      <div class="floaty">
+        <img src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" alt="SaaS Design" class="rounded-2xl shadow-xl" />
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-16 text-center">
+      <h2 class="text-3xl font-bold text-black">Why Choose PixStark?</h2>
+      <p class="text-slate-600 mt-3 mb-10">Designs that dazzle. Code that converts.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-2xl bg-white shadow-lg hover:shadow-xl border border-pink-100">
+          <h3 class="font-semibold text-pink-600 text-lg mb-2">Premium Aesthetics</h3>
+          <p class="text-slate-600">We craft pixel-perfect designs that tell your brand’s story beautifully and boldly.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white shadow-lg hover:shadow-xl border border-blue-100">
+          <h3 class="font-semibold text-blue-600 text-lg mb-2">Blazing Performance</h3>
+          <p class="text-slate-600">All websites are optimized for lightning-fast speed, SEO, and accessibility.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white shadow-lg hover:shadow-xl border border-black/10">
+          <h3 class="font-semibold text-black text-lg mb-2">Launch Support</h3>
+          <p class="text-slate-600">From design to deployment, we’re with you every step of the way.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-16 bg-gradient-to-r from-pink-50 to-blue-50 rounded-3xl">
+      <h2 class="text-3xl font-bold text-center text-black">Our Plans</h2>
+      <p class="text-center text-slate-600 mb-12">Simple pricing for every stage of your startup</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="p-8 rounded-2xl bg-white shadow-lg border border-pink-100">
+          <h3 class="text-xl font-bold text-pink-600 mb-2">Starter</h3>
+          <p class="text-slate-600 mb-4">Perfect for MVPs or new launches</p>
+          <div class="text-4xl font-bold text-black mb-6">₹9,999</div>
+          <ul class="text-left text-slate-600 space-y-2 mb-6">
+            <li>✔ 3-page responsive site</li>
+            <li>✔ SEO ready</li>
+            <li>✔ Fast hosting setup</li>
+          </ul>
+          <a href="#contact" class="block text-center px-6 py-3 rounded-lg bg-gradient-to-r from-pink-600 to-blue-600 text-white font-semibold">Get Started</a>
+        </div>
+        <div class="p-8 rounded-2xl bg-white shadow-xl border-2 border-pink-500 scale-105">
+          <h3 class="text-xl font-bold text-pink-600 mb-2">Growth</h3>
+          <p class="text-slate-600 mb-4">For scaling startups ready to impress</p>
+          <div class="text-4xl font-bold text-black mb-6">₹19,999</div>
+          <ul class="text-left text-slate-600 space-y-2 mb-6">
+            <li>✔ Up to 6 pages</li>
+            <li>✔ Custom illustrations</li>
+            <li>✔ Blog + analytics integration</li>
+          </ul>
+          <a href="#contact" class="block text-center px-6 py-3 rounded-lg bg-gradient-to-r from-pink-600 to-blue-600 text-white font-semibold">Get Started</a>
+        </div>
+        <div class="p-8 rounded-2xl bg-white shadow-lg border border-blue-100">
+          <h3 class="text-xl font-bold text-blue-600 mb-2">Pro Launch</h3>
+          <p class="text-slate-600 mb-4">Full-scale design + growth package</p>
+          <div class="text-4xl font-bold text-black mb-6">₹39,999</div>
+          <ul class="text-left text-slate-600 space-y-2 mb-6">
+            <li>✔ Custom UI/UX</li>
+            <li>✔ Landing + CMS + Blog</li>
+            <li>✔ Priority support</li>
+          </ul>
+          <a href="#contact" class="block text-center px-6 py-3 rounded-lg bg-gradient-to-r from-pink-600 to-blue-600 text-white font-semibold">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 text-center">
+      <h2 class="text-3xl font-bold text-black">Let’s build something amazing</h2>
+      <p class="text-slate-600 mb-10">Tell us about your dream website — we’ll make it real.</p>
+      <form class="max-w-xl mx-auto space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg border border-slate-300 focus:border-pink-500 focus:ring-1 focus:ring-pink-500" />
+        <input type="email" placeholder="Email Address" class="w-full p-3 rounded-lg border border-slate-300 focus:border-pink-500 focus:ring-1 focus:ring-pink-500" />
+        <textarea placeholder="Your Project Details" class="w-full p-3 rounded-lg border border-slate-300 focus:border-pink-500 focus:ring-1 focus:ring-pink-500" rows="4"></textarea>
+        <button class="px-6 py-3 rounded-lg bg-gradient-to-r from-pink-600 to-blue-600 text-white font-semibold w-full">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-black text-white text-center py-6 mt-10">
+    <p class="text-sm">© 2025 PixStark. Built with ❤️ and Tailwind CSS.</p>
+  </footer>
+</body>
+</html>
