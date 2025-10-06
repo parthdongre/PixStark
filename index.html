@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PixStark — Beautiful SaaS Websites</title>
-  <meta name="description" content="PixStark builds fast, beautiful SaaS websites that convert visitors into customers. Templates, custom builds, and launch support." />
+  <title>Contact — PixStark</title>
+  <meta name="description" content="Contact PixStark to start building your dream SaaS website." />
 
   <!-- Tailwind (CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -16,22 +16,13 @@
     body { font-family: 'Urbanist', sans-serif; }
 
     /* Animations */
-    .fade-in { opacity: 0; transform: translateY(20px); animation: fadeIn 1s ease forwards; }
     @keyframes fadeIn {
-      to { opacity: 1; transform: translateY(0); }
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
     }
+    .fade-in { animation: fadeIn 1s ease forwards; }
 
-    .fade-in-delayed { opacity: 0; transform: translateY(30px); animation: fadeIn 1s ease forwards; animation-delay: 0.5s; }
-
-    /* Floating effect */
-    .floaty { animation: floaty 6s ease-in-out infinite; }
-    @keyframes floaty {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-6px); }
-      100% { transform: translateY(0); }
-    }
-
-    /* Hover darken effect */
+    /* Hover effects */
     .hover-darken:hover { filter: brightness(0.8); transition: filter 0.3s ease; }
   </style>
 </head>
@@ -45,95 +36,17 @@
       </div>
     </div>
     <nav class="hidden md:flex gap-6 text-sm text-slate-300">
-      <a href="#features" class="hover:text-pink-500 transition hover-darken">Features</a>
-      <a href="#pricing" class="hover:text-pink-500 transition hover-darken">Pricing</a>
-      <a href="#cases" class="hover:text-pink-500 transition hover-darken">Case Studies</a>
-      <a href="#contact" class="hover:text-pink-500 transition hover-darken">Contact</a>
+        <a href="index.html" class="hover:text-pink-500 transition hover-darken">Home</a>
+        <a href="features.html" class="hover:text-pink-500 transition hover-darken">Features</a>
+        <a href="pricing.html" class="hover:text-pink-500 transition hover-darken">Pricing</a>
+        <a href="contact.html" class="text-pink-500 transition hover-darken">Contact</a>
     </nav>
     <div class="flex items-center gap-3">
-      <a href="#contact" class="px-4 py-2 rounded-lg bg-gradient-to-r from-pink-600 to-blue-600 text-white text-sm shadow-md hover:opacity-90 hover-darken">Get a quote</a>
+        <a href="contact.html" class="px-4 py-2 rounded-lg bg-gradient-to-r from-pink-600 to-blue-600 text-white text-sm shadow-md hover:opacity-90 hover-darken">Get a quote</a>
     </div>
   </header>
 
   <main class="max-w-7xl mx-auto p-6">
-    <!-- Hero -->
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-16">
-      <div class="fade-in">
-        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight">
-          Build your dream <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500">SaaS website</span> with PixStark
-        </h1>
-        <p class="mt-6 text-lg text-slate-400 max-w-md fade-in-delayed">Launch stunning, high-converting websites designed to make your startup look like a million-dollar brand. Fast. Scalable. Memorable.</p>
-        <div class="mt-8 flex gap-4 fade-in-delayed">
-          <a href="#pricing" class="px-6 py-3 rounded-lg bg-gradient-to-r from-pink-600 to-blue-600 text-white font-semibold shadow-md hover:opacity-90 hover-darken">View Plans</a>
-          <a href="#contact" class="px-6 py-3 rounded-lg border border-pink-500 text-pink-400 font-semibold hover:bg-pink-500/10 hover-darken transition">Talk to Us</a>
-        </div>
-      </div>
-      <div class="floaty fade-in-delayed">
-        <img src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" alt="SaaS Design" class="rounded-2xl shadow-2xl border border-slate-800 hover-darken" />
-      </div>
-    </section>
-
-    <!-- Features -->
-    <section id="features" class="py-20 text-center fade-in">
-      <h2 class="text-4xl font-bold mb-4">Why Choose <span class="text-pink-500">PixStark</span>?</h2>
-      <p class="text-slate-400 mb-12">Designs that dazzle. Code that converts.</p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-        <div class="p-8 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-pink-600 transition hover-darken">
-          <h3 class="font-semibold text-pink-500 text-lg mb-2">Premium Aesthetics</h3>
-          <p class="text-slate-400">We craft pixel-perfect designs that tell your brand’s story beautifully and boldly.</p>
-        </div>
-        <div class="p-8 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-blue-600 transition hover-darken">
-          <h3 class="font-semibold text-blue-500 text-lg mb-2">Blazing Performance</h3>
-          <p class="text-slate-400">All websites are optimized for lightning-fast speed, SEO, and accessibility.</p>
-        </div>
-        <div class="p-8 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-white transition hover-darken">
-          <h3 class="font-semibold text-white text-lg mb-2">Launch Support</h3>
-          <p class="text-slate-400">From design to deployment, we’re with you every step of the way.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing -->
-    <section id="pricing" class="py-20 bg-zinc-950 rounded-3xl border border-zinc-800 text-center fade-in">
-      <h2 class="text-4xl font-bold mb-4">Our Plans</h2>
-      <p class="text-slate-400 mb-12">Simple pricing for every stage of your startup</p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
-        <div class="p-10 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-pink-600 transition hover-darken">
-          <h3 class="text-xl font-bold text-pink-500 mb-2">Starter</h3>
-          <p class="text-slate-400 mb-4">Perfect for MVPs or new launches</p>
-          <div class="text-4xl font-bold text-white mb-6">₹9,999</div>
-          <ul class="text-left text-slate-400 space-y-2 mb-6">
-            <li>✔ 3-page responsive site</li>
-            <li>✔ SEO ready</li>
-            <li>✔ Fast hosting setup</li>
-          </ul>
-          <a href="#contact" class="block text-center px-6 py-3 rounded-lg bg-gradient-to-r from-pink-600 to-blue-600 text-white font-semibold hover-darken">Get Started</a>
-        </div>
-        <div class="p-10 rounded-2xl bg-zinc-900 border-2 border-pink-600 shadow-lg scale-105 hover-darken">
-          <h3 class="text-xl font-bold text-pink-500 mb-2">Growth</h3>
-          <p class="text-slate-400 mb-4">For scaling startups ready to impress</p>
-          <div class="text-4xl font-bold text-white mb-6">₹19,999</div>
-          <ul class="text-left text-slate-400 space-y-2 mb-6">
-            <li>✔ Up to 6 pages</li>
-            <li>✔ Custom illustrations</li>
-            <li>✔ Blog + analytics integration</li>
-          </ul>
-          <a href="#contact" class="block text-center px-6 py-3 rounded-lg bg-gradient-to-r from-pink-600 to-blue-600 text-white font-semibold hover-darken">Get Started</a>
-        </div>
-        <div class="p-10 rounded-2xl bg-zinc-900 border border-blue-600 hover:border-pink-600 transition hover-darken">
-          <h3 class="text-xl font-bold text-blue-500 mb-2">Pro Launch</h3>
-          <p class="text-slate-400 mb-4">Full-scale design + growth package</p>
-          <div class="text-4xl font-bold text-white mb-6">₹39,999</div>
-          <ul class="text-left text-slate-400 space-y-2 mb-6">
-            <li>✔ Custom UI/UX</li>
-            <li>✔ Landing + CMS + Blog</li>
-            <li>✔ Priority support</li>
-          </ul>
-          <a href="#contact" class="block text-center px-6 py-3 rounded-lg bg-gradient-to-r from-pink-600 to-blue-600 text-white font-semibold hover-darken">Get Started</a>
-        </div>
-      </div>
-    </section>
-
     <!-- Contact -->
     <section id="contact" class="py-20 text-center fade-in">
       <h2 class="text-4xl font-bold mb-4">Let’s build something amazing</h2>
@@ -150,19 +63,5 @@
   <footer class="bg-zinc-950 text-slate-400 text-center py-6 mt-10 border-t border-zinc-800 fade-in">
     <p class="text-sm">© 2025 PixStark. Built with ❤️ and Tailwind CSS.</p>
   </footer>
-
-  <script>
-    // Trigger fade-in on scroll
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-          entry.target.style.opacity = 1;
-        }
-      });
-    });
-
-    document.querySelectorAll('.fade-in, .fade-in-delayed').forEach(el => observer.observe(el));
-  </script>
 </body>
 </html>
