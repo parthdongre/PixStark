@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pricing — PixStark</title>
+  <meta name="description" content="Affordable pricing plans for SaaS websites by PixStark." />
+
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Urbanist', sans-serif; }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in { animation: fadeIn 1s ease forwards; }
+
+    @keyframes slideIn {
+        from { opacity: 0; transform: translateX(-30px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+    .slide-in { animation: slideIn 1s ease forwards; }
+
+    /* Hover effects */
+    .hover-darken:hover { filter: brightness(0.8); transition: filter 0.3s ease; }
+    .hover-lift:hover { transform: translateY(-5px); transition: transform 0.3s ease; }
+  </style>
+</head>
+<body class="bg-black text-white antialiased">
+  <header class="max-w-7xl mx-auto p-6 flex items-center justify-between fade-in">
+    <div class="flex items-center gap-3 hover-darken cursor-pointer">
+      <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-pink-500 to-blue-500 text-white flex items-center justify-center font-bold">PS</div>
+      <div>
+        <div class="text-lg font-bold tracking-wide">PixStark</div>
+        <div class="text-xs text-slate-400">SaaS websites that actually sell</div>
+      </div>
+    </div>
+    <nav class="hidden md:flex gap-6 text-sm text-slate-300">
+        <a href="index.html" class="hover:text-pink-500 transition hover-darken">Home</a>
+        <a href="features.html" class="hover:text-pink-500 transition hover-darken">Features</a>
+        <a href="pricing.html" class="text-pink-500 transition hover-darken">Pricing</a>
+        <a href="contact.html" class="hover:text-pink-500 transition hover-darken">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+        <a href="contact.html" class="px-4 py-2 rounded-lg bg-gradient-to-r from-pink-600 to-blue-600 text-white text-sm shadow-md hover:opacity-90 hover-darken">Get a quote</a>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-6">
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 bg-zinc-950 rounded-3xl border border-zinc-800 text-center fade-in">
+      <h2 class="text-4xl font-bold mb-4">Our Plans</h2>
+      <p class="text-slate-400 mb-12">Simple pricing for every stage of your startup</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+        <div class="p-10 rounded-2xl bg-zinc-900 border border-zinc-800 hover:border-pink-600 transition hover-lift slide-in" style="animation-delay: 0.2s;">
+          <h3 class="text-xl font-bold text-pink-500 mb-2">Starter</h3>
+          <p class="text-slate-400 mb-4">Perfect for MVPs or new launches</p>
+          <div class="text-4xl font-bold text-white mb-6">₹9,999</div>
+          <ul class="text-left text-slate-400 space-y-2 mb-6">
+            <li>✔ 3-page responsive site</li>
+            <li>✔ SEO ready</li>
+            <li>✔ Fast hosting setup</li>
+          </ul>
+          <a href="contact.html" class="block text-center px-6 py-3 rounded-lg bg-gradient-to-r from-pink-600 to-blue-600 text-white font-semibold hover-darken">Get Started</a>
+        </div>
+        <div class="p-10 rounded-2xl bg-zinc-900 border-2 border-pink-600 shadow-lg scale-105 hover-lift slide-in" style="animation-delay: 0.4s;">
+          <h3 class="text-xl font-bold text-pink-500 mb-2">Growth</h3>
+          <p class="text-slate-400 mb-4">For scaling startups ready to impress</p>
+          <div class="text-4xl font-bold text-white mb-6">₹19,999</div>
+          <ul class="text-left text-slate-400 space-y-2 mb-6">
+            <li>✔ Up to 6 pages</li>
+            <li>✔ Custom illustrations</li>
+            <li>✔ Blog + analytics integration</li>
+          </ul>
+          <a href="contact.html" class="block text-center px-6 py-3 rounded-lg bg-gradient-to-r from-pink-600 to-blue-600 text-white font-semibold hover-darken">Get Started</a>
+        </div>
+        <div class="p-10 rounded-2xl bg-zinc-900 border border-blue-600 hover:border-pink-600 transition hover-lift slide-in" style="animation-delay: 0.6s;">
+          <h3 class="text-xl font-bold text-blue-500 mb-2">Pro Launch</h3>
+          <p class="text-slate-400 mb-4">Full-scale design + growth package</p>
+          <div class="text-4xl font-bold text-white mb-6">₹39,999</div>
+          <ul class="text-left text-slate-400 space-y-2 mb-6">
+            <li>✔ Custom UI/UX</li>
+            <li>✔ Landing + CMS + Blog</li>
+            <li>✔ Priority support</li>
+          </ul>
+          <a href="contact.html" class="block text-center px-6 py-3 rounded-lg bg-gradient-to-r from-pink-600 to-blue-600 text-white font-semibold hover-darken">Get Started</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-zinc-950 text-slate-400 text-center py-6 mt-10 border-t border-zinc-800 fade-in">
+    <p class="text-sm">© 2025 PixStark. Built with ❤️ and Tailwind CSS.</p>
+  </footer>
+</body>
+</html>
